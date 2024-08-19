@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Gin Rummy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emoji Gin Rummy</h1>
+    </header>
+    <div id="game-container">
+        <div id="bot-hand" class="card-area">
+            <h2>CardSharp's Hand</h2>
+            <!-- Cards will be displayed here -->
+        </div>
+        <div id="discard-pile" class="card-area">
+            <h2>Discard Pile</h2>
+            <!-- Cards will be displayed here -->
+        </div>
+        <div id="player-hand" class="card-area">
+            <h2>Your Hand</h2>
+            <!-- Cards will be displayed here -->
+        </div>
+        <button id="shuffle-button">Deal Cards</button>
+        <div id="points">
+            <h2>Points: <span id="points-display">0</span></h2>
+        </div>
+        <div id="difficulty">
+            <h2>Select Difficulty</h2>
+            <button data-difficulty="minimum">Minimum</button>
+            <button data-difficulty="minor">Minor</button>
+            <button data-difficulty="medium">Medium</button>
+            <button data-difficulty="hard">Hard</button>
+            <button data-difficulty="hardcore">Hardcore</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
